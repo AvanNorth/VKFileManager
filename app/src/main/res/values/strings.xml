@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">VKFileManager</string>
+    <string name="req_perm_text">Для корректной работы приложения необходимы разрешения на чтение и редактирования файлов</string>
+    <string name="req_perm_btn_text">Предоставить разрешения</string>
+    <string name="storage_space_text">Доступно: %1$s / %2$s</string>
+    <string name="file_list_btn_text">Обзор</string>
+    <string name="storage_name_text">Внутреннее хранилище</string>
+    <string name="files_not_found_error">Файлы не найдены</string>
+    <string name="delete_popup_text">Удалить</string>
+    <string name="rename_popup_text">Переименовать</string>
+    <string name="move_popup_text">Переместить</string>
+    <string name="share_popup_text">Поделиться</string>
+    <string name="delete_toast_text">%1$s удален</string>
+</resources>
