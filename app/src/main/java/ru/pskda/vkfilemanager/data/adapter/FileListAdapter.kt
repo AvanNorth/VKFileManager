@@ -20,7 +20,7 @@ import java.util.Date
 import java.util.Locale
 
 
-class FileListAdapter(var context: Context, var files: Array<File>) :
+class FileListAdapter(var context: Context, var files: List<File>) :
     RecyclerView.Adapter<FileListAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -35,6 +35,7 @@ class FileListAdapter(var context: Context, var files: Array<File>) :
         val view =
             LayoutInflater.from(parent.context)
                 .inflate(R.layout.file_list_item, parent, false)
+
         return ViewHolder(view)
     }
 

@@ -43,7 +43,7 @@ class FileListPopup(context: Context, v: View, file: File) {
         }
     }
 
-    fun show(){
+    fun show() {
         popup.show()
     }
 }

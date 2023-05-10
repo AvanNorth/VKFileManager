@@ -32,7 +32,7 @@ object FileTypeFormatter {
     fun getFileType(file: File): FileType {
         return if (file.isDirectory) FileType.DIRECTORY
         else {
-            when (file.extension) {
+            when (getFileExt(file)) {
                 "apk" -> FileType.APK
                 "pdf" -> FileType.PDF
                 "gif" -> FileType.GIF
@@ -51,5 +51,7 @@ object FileTypeFormatter {
      * Функция возвращает mime-тип файла согласно базе типов класса MimeTypeMap.
      */
     fun getFileMIMEType(file: File): String? = MimeTypeMap.getSingleton()
-        .getMimeTypeFromExtension(file.extension.lowercase())
+        .getMimeTypeFromExtension(getFileExt(file).lowercase())
+
+    fun getFileExt(file: File): String = file.extension
 }
